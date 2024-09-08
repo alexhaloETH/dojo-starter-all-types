@@ -363,40 +363,60 @@
   },
   {
     "type": "impl",
-    "name": "positionImpl",
-    "interface_name": "dojo_starter::models::Iposition"
+    "name": "signed_dataImpl",
+    "interface_name": "dojo_starter_all_types::models::all_types::Isigned_data"
   },
   {
-    "type": "struct",
-    "name": "dojo_starter::models::Vec2",
-    "members": [
+    "type": "enum",
+    "name": "core::bool",
+    "variants": [
       {
-        "name": "x",
-        "type": "core::integer::u32"
+        "name": "False",
+        "type": "()"
       },
       {
-        "name": "y",
-        "type": "core::integer::u32"
+        "name": "True",
+        "type": "()"
       }
     ]
   },
   {
     "type": "struct",
-    "name": "dojo_starter::models::Position",
+    "name": "dojo_starter_all_types::models::all_types::SignedData",
     "members": [
       {
         "name": "player",
         "type": "core::starknet::contract_address::ContractAddress"
       },
       {
-        "name": "vec",
-        "type": "dojo_starter::models::Vec2"
+        "name": "exists",
+        "type": "core::bool"
+      },
+      {
+        "name": "iEight",
+        "type": "core::integer::i8"
+      },
+      {
+        "name": "iSixteen",
+        "type": "core::integer::i16"
+      },
+      {
+        "name": "iThirtyTwo",
+        "type": "core::integer::i32"
+      },
+      {
+        "name": "iSixtyFour",
+        "type": "core::integer::i64"
+      },
+      {
+        "name": "iOneTwentyEight",
+        "type": "core::integer::i128"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter::models::Iposition",
+    "name": "dojo_starter_all_types::models::all_types::Isigned_data",
     "items": [
       {
         "type": "function",
@@ -404,7 +424,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter::models::Position"
+            "type": "dojo_starter_all_types::models::all_types::SignedData"
           }
         ],
         "outputs": [],
@@ -414,7 +434,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::models::position::Event",
+    "name": "dojo_starter_all_types::models::all_types::signed_data::Event",
     "kind": "enum",
     "variants": []
   }

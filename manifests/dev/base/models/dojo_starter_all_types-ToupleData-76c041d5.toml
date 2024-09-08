@@ -1,0 +1,31 @@
+kind = "DojoModel"
+class_hash = "0x22e6d7c8db19a53bc8f576a9b5a14a69313beac0bf2c47e27c0e195276a7e3e"
+original_class_hash = "0x22e6d7c8db19a53bc8f576a9b5a14a69313beac0bf2c47e27c0e195276a7e3e"
+abi = "manifests/dev/base/abis/models/dojo_starter_all_types-ToupleData-76c041d5.json"
+tag = "dojo_starter_all_types-ToupleData"
+manifest_name = "dojo_starter_all_types-ToupleData-76c041d5"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "exists"
+type = "bool"
+key = false
+
+[[members]]
+name = "touple"
+type = "(u8, u16)"
+key = false
+
+[[members]]
+name = "touple1"
+type = "(i8, i16,u64)"
+key = false
+
+[[members]]
+name = "touple2"
+type = "(felt252, u256)"
+key = false

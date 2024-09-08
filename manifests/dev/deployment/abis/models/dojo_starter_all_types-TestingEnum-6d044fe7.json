@@ -363,52 +363,76 @@
   },
   {
     "type": "impl",
-    "name": "directions_availableImpl",
-    "interface_name": "dojo_starter_all_types::models::Idirections_available"
+    "name": "testing_enumImpl",
+    "interface_name": "dojo_starter_all_types::models::all_types::Itesting_enum"
   },
   {
     "type": "enum",
-    "name": "dojo_starter_all_types::models::Direction",
+    "name": "core::bool",
     "variants": [
       {
-        "name": "None",
+        "name": "False",
         "type": "()"
       },
       {
-        "name": "Left",
-        "type": "()"
-      },
-      {
-        "name": "Right",
-        "type": "()"
-      },
-      {
-        "name": "Up",
-        "type": "()"
-      },
-      {
-        "name": "Down",
+        "name": "True",
         "type": "()"
       }
     ]
   },
   {
     "type": "struct",
-    "name": "dojo_starter_all_types::models::DirectionsAvailable",
+    "name": "dojo_starter_all_types::models::all_types::Seed",
+    "members": [
+      {
+        "name": "background",
+        "type": "core::integer::u8"
+      },
+      {
+        "name": "foreground",
+        "type": "core::integer::u16"
+      },
+      {
+        "name": "after",
+        "type": "core::integer::u32"
+      }
+    ]
+  },
+  {
+    "type": "enum",
+    "name": "dojo_starter_all_types::models::all_types::TestingEnumValue",
+    "variants": [
+      {
+        "name": "Regular",
+        "type": "dojo_starter_all_types::models::all_types::Seed"
+      },
+      {
+        "name": "Custom",
+        "type": "core::integer::u8"
+      }
+    ]
+  },
+  {
+    "type": "struct",
+    "name": "dojo_starter_all_types::models::all_types::TestingEnum",
     "members": [
       {
         "name": "player",
         "type": "core::starknet::contract_address::ContractAddress"
       },
       {
-        "name": "directions",
-        "type": "core::array::Array::<dojo_starter_all_types::models::Direction>"
+        "name": "exists",
+        "type": "core::bool"
+      },
+      {
+        "name": "traits",
+        "type": "dojo_starter_all_types::models::all_types::TestingEnumValue"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter_all_types::models::Idirections_available",
+    "name": "dojo_starter_all_types::models::all_types::Itesting_enum",
     "items": [
       {
         "type": "function",
@@ -416,7 +440,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter_all_types::models::DirectionsAvailable"
+            "type": "dojo_starter_all_types::models::all_types::TestingEnum"
           }
         ],
         "outputs": [],
@@ -426,7 +450,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter_all_types::models::directions_available::Event",
+    "name": "dojo_starter_all_types::models::all_types::testing_enum::Event",
     "kind": "enum",
     "variants": []
   }

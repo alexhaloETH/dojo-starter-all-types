@@ -364,11 +364,11 @@
   {
     "type": "impl",
     "name": "movesImpl",
-    "interface_name": "dojo_starter::models::Imoves"
+    "interface_name": "dojo_starter_all_types::models::Imoves"
   },
   {
     "type": "enum",
-    "name": "dojo_starter::models::Direction",
+    "name": "dojo_starter_all_types::models::Direction",
     "variants": [
       {
         "name": "None",
@@ -408,7 +408,7 @@
   },
   {
     "type": "struct",
-    "name": "dojo_starter::models::Moves",
+    "name": "dojo_starter_all_types::models::Moves",
     "members": [
       {
         "name": "player",
@@ -420,7 +420,7 @@
       },
       {
         "name": "last_direction",
-        "type": "dojo_starter::models::Direction"
+        "type": "dojo_starter_all_types::models::Direction"
       },
       {
         "name": "can_move",
@@ -430,7 +430,7 @@
   },
   {
     "type": "interface",
-    "name": "dojo_starter::models::Imoves",
+    "name": "dojo_starter_all_types::models::Imoves",
     "items": [
       {
         "type": "function",
@@ -438,7 +438,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter::models::Moves"
+            "type": "dojo_starter_all_types::models::Moves"
           }
         ],
         "outputs": [],
@@ -448,7 +448,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::models::moves::Event",
+    "name": "dojo_starter_all_types::models::moves::Event",
     "kind": "enum",
     "variants": []
   }

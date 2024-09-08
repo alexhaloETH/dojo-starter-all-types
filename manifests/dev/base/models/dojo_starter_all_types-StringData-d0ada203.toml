@@ -1,0 +1,21 @@
+kind = "DojoModel"
+class_hash = "0x259aa6ce7715877fd23ea1a99993cb64987205efcd87571b75b311250083492"
+original_class_hash = "0x259aa6ce7715877fd23ea1a99993cb64987205efcd87571b75b311250083492"
+abi = "manifests/dev/base/abis/models/dojo_starter_all_types-StringData-d0ada203.json"
+tag = "dojo_starter_all_types-StringData"
+manifest_name = "dojo_starter_all_types-StringData-d0ada203"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "exists"
+type = "bool"
+key = false
+
+[[members]]
+name = "byte_array"
+type = "ByteArray"
+key = false

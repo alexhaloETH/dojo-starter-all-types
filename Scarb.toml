@@ -1,6 +1,6 @@
 [package]
 cairo-version = "=2.7.0"
-name = "dojo_starter"
+name = "dojo_starter_all_types"
 version = "0.1.0"
 
 [cairo]
@@ -12,6 +12,6 @@ spawn = "./scripts/spawn.sh"
 move = "./scripts/move.sh"
 
 [dependencies]
-dojo = { git = "https://github.com/dojoengine/dojo", tag = "v1.0.0-alpha.6" }
+dojo = { git = "https://github.com/dojoengine/dojo", tag = "v1.0.0-alpha.5" }
 
 [[target.dojo]]

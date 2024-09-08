@@ -1,0 +1,21 @@
+kind = "DojoModel"
+class_hash = "0x1a4e11bec4423eb16abf9d6f4e1e90dea798b1dd7c46fad93598f2e8c93d7f9"
+original_class_hash = "0x1a4e11bec4423eb16abf9d6f4e1e90dea798b1dd7c46fad93598f2e8c93d7f9"
+abi = "manifests/dev/base/abis/models/dojo_starter_all_types-EmitEvent-2be394b9.json"
+tag = "dojo_starter_all_types-EmitEvent"
+manifest_name = "dojo_starter_all_types-EmitEvent-2be394b9"
+
+[[members]]
+name = "id"
+type = "u128"
+key = true
+
+[[members]]
+name = "u_thrity_two"
+type = "u32"
+key = false
+
+[[members]]
+name = "u_onetwoeight"
+type = "u128"
+key = false

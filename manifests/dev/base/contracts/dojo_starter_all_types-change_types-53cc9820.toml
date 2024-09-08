@@ -1,0 +1,10 @@
+kind = "DojoContract"
+class_hash = "0x8966968c31ddfd223c3196cf854b04a0112f1c925528a6b045d4b7db2d7d3a"
+original_class_hash = "0x8966968c31ddfd223c3196cf854b04a0112f1c925528a6b045d4b7db2d7d3a"
+base_class_hash = "0x0"
+abi = "manifests/dev/base/abis/contracts/dojo_starter_all_types-change_types-53cc9820.json"
+reads = []
+writes = []
+init_calldata = []
+tag = "dojo_starter_all_types-change_types"
+manifest_name = "dojo_starter_all_types-change_types-53cc9820"

@@ -1,0 +1,26 @@
+kind = "DojoModel"
+class_hash = "0x726926e64597836fedc8165a035a2caf3c920959fcbf219e05e0a2a7534bb94"
+original_class_hash = "0x726926e64597836fedc8165a035a2caf3c920959fcbf219e05e0a2a7534bb94"
+abi = "manifests/dev/base/abis/models/dojo_starter_all_types-LargeData-58fc27ad.json"
+tag = "dojo_starter_all_types-LargeData"
+manifest_name = "dojo_starter_all_types-LargeData-58fc27ad"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "exists"
+type = "bool"
+key = false
+
+[[members]]
+name = "felt"
+type = "felt252"
+key = false
+
+[[members]]
+name = "uTwoFiveSix"
+type = "u256"
+key = false

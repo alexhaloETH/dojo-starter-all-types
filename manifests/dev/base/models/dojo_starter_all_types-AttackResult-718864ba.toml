@@ -1,0 +1,31 @@
+kind = "DojoModel"
+class_hash = "0x5b5f32b79b35ee84a8bffea958546f39c87cf4ab590b86e48c8e98c7d248c7a"
+original_class_hash = "0x5b5f32b79b35ee84a8bffea958546f39c87cf4ab590b86e48c8e98c7d248c7a"
+abi = "manifests/dev/base/abis/models/dojo_starter_all_types-AttackResult-718864ba.json"
+tag = "dojo_starter_all_types-AttackResult"
+manifest_name = "dojo_starter_all_types-AttackResult-718864ba"
+
+[[members]]
+name = "combatant_id"
+type = "u128"
+key = true
+
+[[members]]
+name = "round"
+type = "u32"
+key = true
+
+[[members]]
+name = "attack_id"
+type = "u128"
+key = false
+
+[[members]]
+name = "target"
+type = "u128"
+key = false
+
+[[members]]
+name = "effect"
+type = "AttackEffect"
+key = false

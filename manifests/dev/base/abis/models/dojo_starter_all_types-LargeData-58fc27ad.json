@@ -363,52 +363,62 @@
   },
   {
     "type": "impl",
-    "name": "directions_availableImpl",
-    "interface_name": "dojo_starter_all_types::models::Idirections_available"
+    "name": "large_dataImpl",
+    "interface_name": "dojo_starter_all_types::models::all_types::Ilarge_data"
   },
   {
     "type": "enum",
-    "name": "dojo_starter_all_types::models::Direction",
+    "name": "core::bool",
     "variants": [
       {
-        "name": "None",
+        "name": "False",
         "type": "()"
       },
       {
-        "name": "Left",
-        "type": "()"
-      },
-      {
-        "name": "Right",
-        "type": "()"
-      },
-      {
-        "name": "Up",
-        "type": "()"
-      },
-      {
-        "name": "Down",
+        "name": "True",
         "type": "()"
       }
     ]
   },
   {
     "type": "struct",
-    "name": "dojo_starter_all_types::models::DirectionsAvailable",
+    "name": "core::integer::u256",
+    "members": [
+      {
+        "name": "low",
+        "type": "core::integer::u128"
+      },
+      {
+        "name": "high",
+        "type": "core::integer::u128"
+      }
+    ]
+  },
+  {
+    "type": "struct",
+    "name": "dojo_starter_all_types::models::all_types::LargeData",
     "members": [
       {
         "name": "player",
         "type": "core::starknet::contract_address::ContractAddress"
       },
       {
-        "name": "directions",
-        "type": "core::array::Array::<dojo_starter_all_types::models::Direction>"
+        "name": "exists",
+        "type": "core::bool"
+      },
+      {
+        "name": "felt",
+        "type": "core::felt252"
+      },
+      {
+        "name": "uTwoFiveSix",
+        "type": "core::integer::u256"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter_all_types::models::Idirections_available",
+    "name": "dojo_starter_all_types::models::all_types::Ilarge_data",
     "items": [
       {
         "type": "function",
@@ -416,7 +426,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter_all_types::models::DirectionsAvailable"
+            "type": "dojo_starter_all_types::models::all_types::LargeData"
           }
         ],
         "outputs": [],
@@ -426,7 +436,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter_all_types::models::directions_available::Event",
+    "name": "dojo_starter_all_types::models::all_types::large_data::Event",
     "kind": "enum",
     "variants": []
   }

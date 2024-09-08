@@ -1,0 +1,26 @@
+kind = "DojoModel"
+class_hash = "0x157aef1198d7c6358c70c0539cee149c17d472661f10878868d84f8547e4e52"
+original_class_hash = "0x157aef1198d7c6358c70c0539cee149c17d472661f10878868d84f8547e4e52"
+abi = "manifests/dev/base/abis/models/dojo_starter_all_types-ItemMap-64efd42c.json"
+tag = "dojo_starter_all_types-ItemMap"
+manifest_name = "dojo_starter_all_types-ItemMap-64efd42c"
+
+[[members]]
+name = "custom"
+type = "bool"
+key = true
+
+[[members]]
+name = "blobert_trait"
+type = "BlobertTrait"
+key = true
+
+[[members]]
+name = "blobert_trait_id"
+type = "u8"
+key = true
+
+[[members]]
+name = "item_id"
+type = "u128"
+key = false

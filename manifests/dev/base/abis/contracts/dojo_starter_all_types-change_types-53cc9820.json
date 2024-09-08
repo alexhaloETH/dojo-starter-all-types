@@ -128,68 +128,65 @@
   },
   {
     "type": "impl",
-    "name": "ActionsImpl",
-    "interface_name": "dojo_starter_all_types::systems::actions::IActions"
-  },
-  {
-    "type": "enum",
-    "name": "dojo_starter_all_types::models::Direction",
-    "variants": [
-      {
-        "name": "None",
-        "type": "()"
-      },
-      {
-        "name": "Left",
-        "type": "()"
-      },
-      {
-        "name": "Right",
-        "type": "()"
-      },
-      {
-        "name": "Up",
-        "type": "()"
-      },
-      {
-        "name": "Down",
-        "type": "()"
-      }
-    ]
+    "name": "ChangeTypesImpl",
+    "interface_name": "dojo_starter_all_types::contracts::change_types::IChangeTypes"
   },
   {
     "type": "interface",
-    "name": "dojo_starter_all_types::systems::actions::IActions",
+    "name": "dojo_starter_all_types::contracts::change_types::IChangeTypes",
     "items": [
       {
         "type": "function",
-        "name": "spawn",
+        "name": "change_large",
         "inputs": [],
         "outputs": [],
-        "state_mutability": "external"
+        "state_mutability": "view"
       },
       {
         "type": "function",
-        "name": "move",
-        "inputs": [
-          {
-            "name": "direction",
-            "type": "dojo_starter_all_types::models::Direction"
-          }
-        ],
+        "name": "change_signed",
+        "inputs": [],
         "outputs": [],
-        "state_mutability": "external"
+        "state_mutability": "view"
+      },
+      {
+        "type": "function",
+        "name": "change_unsigned",
+        "inputs": [],
+        "outputs": [],
+        "state_mutability": "view"
+      },
+      {
+        "type": "function",
+        "name": "change_string",
+        "inputs": [],
+        "outputs": [],
+        "state_mutability": "view"
+      },
+      {
+        "type": "function",
+        "name": "change_array",
+        "inputs": [],
+        "outputs": [],
+        "state_mutability": "view"
+      },
+      {
+        "type": "function",
+        "name": "change_touple",
+        "inputs": [],
+        "outputs": [],
+        "state_mutability": "view"
       }
     ]
   },
   {
     "type": "impl",
     "name": "IDojoInitImpl",
-    "interface_name": "dojo_starter_all_types::systems::actions::actions::IDojoInit"
+    "interface_name": "dojo_starter_all_types::contracts::change_types::change_types::IDojoInit"
   },
   {
     "type": "interface",
-    "name": "dojo_starter_all_types::systems::actions::actions::IDojoInit",
+    "name": "dojo_starter_all_types::contracts::change_types::change_types::IDojoInit",
     "items": [
       {
         "type": "function",
@@ -249,7 +246,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter_all_types::systems::actions::actions::Event",
+    "name": "dojo_starter_all_types::contracts::change_types::change_types::Event",
     "kind": "enum",
     "variants": [
       {

@@ -1,0 +1,41 @@
+kind = "DojoModel"
+class_hash = "0x565f2e443541a2ab3fe640594409370916bfd383b8696674b78c635691e065b"
+original_class_hash = "0x565f2e443541a2ab3fe640594409370916bfd383b8696674b78c635691e065b"
+abi = "manifests/dev/base/abis/models/dojo_starter_all_types-SignedData-630a557b.json"
+tag = "dojo_starter_all_types-SignedData"
+manifest_name = "dojo_starter_all_types-SignedData-630a557b"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "exists"
+type = "bool"
+key = false
+
+[[members]]
+name = "iEight"
+type = "i8"
+key = false
+
+[[members]]
+name = "iSixteen"
+type = "i16"
+key = false
+
+[[members]]
+name = "iThirtyTwo"
+type = "i32"
+key = false
+
+[[members]]
+name = "iSixtyFour"
+type = "i64"
+key = false
+
+[[members]]
+name = "iOneTwentyEight"
+type = "i128"
+key = false

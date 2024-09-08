@@ -363,52 +363,60 @@
   },
   {
     "type": "impl",
-    "name": "movedImpl",
-    "interface_name": "dojo_starter::systems::actions::actions::Imoved"
+    "name": "signed_dataImpl",
+    "interface_name": "dojo_starter_all_types::models::all_types::Isigned_data"
   },
   {
     "type": "enum",
-    "name": "dojo_starter::models::Direction",
+    "name": "core::bool",
     "variants": [
       {
-        "name": "None",
+        "name": "False",
         "type": "()"
       },
       {
-        "name": "Left",
-        "type": "()"
-      },
-      {
-        "name": "Right",
-        "type": "()"
-      },
-      {
-        "name": "Up",
-        "type": "()"
-      },
-      {
-        "name": "Down",
+        "name": "True",
         "type": "()"
       }
     ]
   },
   {
     "type": "struct",
-    "name": "dojo_starter::systems::actions::actions::Moved",
+    "name": "dojo_starter_all_types::models::all_types::SignedData",
     "members": [
       {
         "name": "player",
         "type": "core::starknet::contract_address::ContractAddress"
       },
       {
-        "name": "direction",
-        "type": "dojo_starter::models::Direction"
+        "name": "exists",
+        "type": "core::bool"
+      },
+      {
+        "name": "iEight",
+        "type": "core::integer::i8"
+      },
+      {
+        "name": "iSixteen",
+        "type": "core::integer::i16"
+      },
+      {
+        "name": "iThirtyTwo",
+        "type": "core::integer::i32"
+      },
+      {
+        "name": "iSixtyFour",
+        "type": "core::integer::i64"
+      },
+      {
+        "name": "iOneTwentyEight",
+        "type": "core::integer::i128"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter::systems::actions::actions::Imoved",
+    "name": "dojo_starter_all_types::models::all_types::Isigned_data",
     "items": [
       {
         "type": "function",
@@ -416,7 +424,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter::systems::actions::actions::Moved"
+            "type": "dojo_starter_all_types::models::all_types::SignedData"
           }
         ],
         "outputs": [],
@@ -426,7 +434,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter::systems::actions::actions::moved::Event",
+    "name": "dojo_starter_all_types::models::all_types::signed_data::Event",
     "kind": "enum",
     "variants": []
   }

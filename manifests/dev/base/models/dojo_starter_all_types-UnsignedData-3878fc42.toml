@@ -1,0 +1,41 @@
+kind = "DojoModel"
+class_hash = "0x754b0935198457e45d666bc97325d546e943ac989b01351925ac3611dcce92b"
+original_class_hash = "0x754b0935198457e45d666bc97325d546e943ac989b01351925ac3611dcce92b"
+abi = "manifests/dev/base/abis/models/dojo_starter_all_types-UnsignedData-3878fc42.json"
+tag = "dojo_starter_all_types-UnsignedData"
+manifest_name = "dojo_starter_all_types-UnsignedData-3878fc42"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "exists"
+type = "bool"
+key = false
+
+[[members]]
+name = "uEight"
+type = "u8"
+key = false
+
+[[members]]
+name = "uSixteen"
+type = "u16"
+key = false
+
+[[members]]
+name = "uThirtyTwo"
+type = "u32"
+key = false
+
+[[members]]
+name = "uSixtyFour"
+type = "u64"
+key = false
+
+[[members]]
+name = "uOneTwentyEight"
+type = "u128"
+key = false

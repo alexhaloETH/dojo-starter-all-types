@@ -128,68 +128,72 @@
   },
   {
     "type": "impl",
-    "name": "ActionsImpl",
-    "interface_name": "dojo_starter_all_types::systems::actions::IActions"
-  },
-  {
-    "type": "enum",
-    "name": "dojo_starter_all_types::models::Direction",
-    "variants": [
-      {
-        "name": "None",
-        "type": "()"
-      },
-      {
-        "name": "Left",
-        "type": "()"
-      },
-      {
-        "name": "Right",
-        "type": "()"
-      },
-      {
-        "name": "Up",
-        "type": "()"
-      },
-      {
-        "name": "Down",
-        "type": "()"
-      }
-    ]
+    "name": "AllTypesImpl",
+    "interface_name": "dojo_starter_all_types::contracts::spawn_types::IAllTypes"
   },
   {
     "type": "interface",
-    "name": "dojo_starter_all_types::systems::actions::IActions",
+    "name": "dojo_starter_all_types::contracts::spawn_types::IAllTypes",
     "items": [
       {
         "type": "function",
-        "name": "spawn",
+        "name": "spawn_large",
         "inputs": [],
         "outputs": [],
-        "state_mutability": "external"
+        "state_mutability": "view"
       },
       {
         "type": "function",
-        "name": "move",
-        "inputs": [
-          {
-            "name": "direction",
-            "type": "dojo_starter_all_types::models::Direction"
-          }
-        ],
+        "name": "spawn_signed",
+        "inputs": [],
         "outputs": [],
-        "state_mutability": "external"
+        "state_mutability": "view"
+      },
+      {
+        "type": "function",
+        "name": "spawn_unsigned",
+        "inputs": [],
+        "outputs": [],
+        "state_mutability": "view"
+      },
+      {
+        "type": "function",
+        "name": "spawn_string",
+        "inputs": [],
+        "outputs": [],
+        "state_mutability": "view"
+      },
+      {
+        "type": "function",
+        "name": "spawn_array",
+        "inputs": [],
+        "outputs": [],
+        "state_mutability": "view"
+      },
+      {
+        "type": "function",
+        "name": "spawn_touple",
+        "inputs": [],
+        "outputs": [],
+        "state_mutability": "view"
+      },
+      {
+        "type": "function",
+        "name": "emit_event",
+        "inputs": [],
+        "outputs": [],
+        "state_mutability": "view"
       }
     ]
   },
   {
     "type": "impl",
     "name": "IDojoInitImpl",
-    "interface_name": "dojo_starter_all_types::systems::actions::actions::IDojoInit"
+    "interface_name": "dojo_starter_all_types::contracts::spawn_types::spawn_types::IDojoInit"
   },
   {
     "type": "interface",
-    "name": "dojo_starter_all_types::systems::actions::actions::IDojoInit",
+    "name": "dojo_starter_all_types::contracts::spawn_types::spawn_types::IDojoInit",
     "items": [
       {
         "type": "function",
@@ -249,7 +253,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter_all_types::systems::actions::actions::Event",
+    "name": "dojo_starter_all_types::contracts::spawn_types::spawn_types::Event",
     "kind": "enum",
     "variants": [
       {

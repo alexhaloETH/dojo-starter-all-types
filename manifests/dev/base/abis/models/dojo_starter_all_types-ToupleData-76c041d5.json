@@ -363,52 +363,66 @@
   },
   {
     "type": "impl",
-    "name": "directions_availableImpl",
-    "interface_name": "dojo_starter_all_types::models::Idirections_available"
+    "name": "touple_dataImpl",
+    "interface_name": "dojo_starter_all_types::models::all_types::Itouple_data"
   },
   {
     "type": "enum",
-    "name": "dojo_starter_all_types::models::Direction",
+    "name": "core::bool",
     "variants": [
       {
-        "name": "None",
+        "name": "False",
         "type": "()"
       },
       {
-        "name": "Left",
-        "type": "()"
-      },
-      {
-        "name": "Right",
-        "type": "()"
-      },
-      {
-        "name": "Up",
-        "type": "()"
-      },
-      {
-        "name": "Down",
+        "name": "True",
         "type": "()"
       }
     ]
   },
   {
     "type": "struct",
-    "name": "dojo_starter_all_types::models::DirectionsAvailable",
+    "name": "core::integer::u256",
+    "members": [
+      {
+        "name": "low",
+        "type": "core::integer::u128"
+      },
+      {
+        "name": "high",
+        "type": "core::integer::u128"
+      }
+    ]
+  },
+  {
+    "type": "struct",
+    "name": "dojo_starter_all_types::models::all_types::ToupleData",
     "members": [
       {
         "name": "player",
         "type": "core::starknet::contract_address::ContractAddress"
       },
       {
-        "name": "directions",
-        "type": "core::array::Array::<dojo_starter_all_types::models::Direction>"
+        "name": "exists",
+        "type": "core::bool"
+      },
+      {
+        "name": "touple",
+        "type": "(core::integer::u8, core::integer::u16)"
+      },
+      {
+        "name": "touple1",
+        "type": "(core::integer::i8, core::integer::i16, core::integer::u64)"
+      },
+      {
+        "name": "touple2",
+        "type": "(core::felt252, core::integer::u256)"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter_all_types::models::Idirections_available",
+    "name": "dojo_starter_all_types::models::all_types::Itouple_data",
     "items": [
       {
         "type": "function",
@@ -416,7 +430,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter_all_types::models::DirectionsAvailable"
+            "type": "dojo_starter_all_types::models::all_types::ToupleData"
           }
         ],
         "outputs": [],
@@ -426,7 +440,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter_all_types::models::directions_available::Event",
+    "name": "dojo_starter_all_types::models::all_types::touple_data::Event",
     "kind": "enum",
     "variants": []
   }

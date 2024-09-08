@@ -1,0 +1,21 @@
+kind = "DojoModel"
+class_hash = "0x4065f06c8150045df7571668d38fa390c9d18dff7447c717512b6699ab7c111"
+original_class_hash = "0x4065f06c8150045df7571668d38fa390c9d18dff7447c717512b6699ab7c111"
+abi = "manifests/dev/base/abis/models/dojo_starter_all_types-TestingEnum-6d044fe7.json"
+tag = "dojo_starter_all_types-TestingEnum"
+manifest_name = "dojo_starter_all_types-TestingEnum-6d044fe7"
+
+[[members]]
+name = "player"
+type = "ContractAddress"
+key = true
+
+[[members]]
+name = "exists"
+type = "bool"
+key = false
+
+[[members]]
+name = "traits"
+type = "TestingEnumValue"
+key = false

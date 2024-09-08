@@ -363,52 +363,30 @@
   },
   {
     "type": "impl",
-    "name": "directions_availableImpl",
-    "interface_name": "dojo_starter_all_types::models::Idirections_available"
-  },
-  {
-    "type": "enum",
-    "name": "dojo_starter_all_types::models::Direction",
-    "variants": [
-      {
-        "name": "None",
-        "type": "()"
-      },
-      {
-        "name": "Left",
-        "type": "()"
-      },
-      {
-        "name": "Right",
-        "type": "()"
-      },
-      {
-        "name": "Up",
-        "type": "()"
-      },
-      {
-        "name": "Down",
-        "type": "()"
-      }
-    ]
+    "name": "emit_eventImpl",
+    "interface_name": "dojo_starter_all_types::models::all_types::Iemit_event"
   },
   {
     "type": "struct",
-    "name": "dojo_starter_all_types::models::DirectionsAvailable",
+    "name": "dojo_starter_all_types::models::all_types::EmitEvent",
     "members": [
       {
-        "name": "player",
-        "type": "core::starknet::contract_address::ContractAddress"
+        "name": "id",
+        "type": "core::integer::u128"
       },
       {
-        "name": "directions",
-        "type": "core::array::Array::<dojo_starter_all_types::models::Direction>"
+        "name": "u_thrity_two",
+        "type": "core::integer::u32"
+      },
+      {
+        "name": "u_onetwoeight",
+        "type": "core::integer::u128"
       }
     ]
   },
   {
     "type": "interface",
-    "name": "dojo_starter_all_types::models::Idirections_available",
+    "name": "dojo_starter_all_types::models::all_types::Iemit_event",
     "items": [
       {
         "type": "function",
@@ -416,7 +394,7 @@
         "inputs": [
           {
             "name": "model",
-            "type": "dojo_starter_all_types::models::DirectionsAvailable"
+            "type": "dojo_starter_all_types::models::all_types::EmitEvent"
           }
         ],
         "outputs": [],
@@ -426,7 +404,7 @@
   },
   {
     "type": "event",
-    "name": "dojo_starter_all_types::models::directions_available::Event",
+    "name": "dojo_starter_all_types::models::all_types::emit_event::Event",
     "kind": "enum",
     "variants": []
   }

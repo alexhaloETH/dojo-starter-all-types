@@ -1,0 +1,9 @@
+tag = "dojo_starter_all_types-change_types"
+writes = [
+    "dojo_starter_all_types-UnsignedData",
+    "dojo_starter_all_types-SignedData",
+    "dojo_starter_all_types-StringData",
+     "dojo_starter_all_types-ArrayData",
+      "dojo_starter_all_types-ToupleData",
+]
+

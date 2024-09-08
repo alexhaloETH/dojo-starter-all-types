@@ -1,0 +1,10 @@
+kind = "DojoContract"
+class_hash = "0x55a36c6dc0b3deb8b934a5194b9e03da42c5a05e592c0f4fc9b1bcc6fc233bd"
+original_class_hash = "0x55a36c6dc0b3deb8b934a5194b9e03da42c5a05e592c0f4fc9b1bcc6fc233bd"
+base_class_hash = "0x0"
+abi = "manifests/dev/base/abis/contracts/dojo_starter_all_types-spawn_types-58c4e5d9.json"
+reads = []
+writes = []
+init_calldata = []
+tag = "dojo_starter_all_types-spawn_types"
+manifest_name = "dojo_starter_all_types-spawn_types-58c4e5d9"
